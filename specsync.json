@@ -1,0 +1,16 @@
+﻿{
+  "$schema": "https://schemas.specsolutions.eu/specsync4azuredevops-config-latest.json",
+  "compatibilityVersion": "3.4",
+  "remote": {
+    "projectUrl": "https://dev.azure.com/hendrigwernner/SomeCalculator",
+    "testSuite": {
+      "name": "CypressTests"
+    }
+  },
+  "local": {
+    "featureFileSource": {
+      "type": "folder",
+      "folder": "cypress/e2e/features"
+    }
+  }
+}

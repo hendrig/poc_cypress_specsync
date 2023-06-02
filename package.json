@@ -1,0 +1,26 @@
+{
+  "name": "poc_cypress_specsync",
+  "version": "1.0.0",
+  "description": "A Proof Of Concept about Cypress, Cucumber and SpecSync",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sync": ".\\tools\\SpecSync.AzureDevOps.Console\\tools\\SpecSync4AzureDevOps.exe push"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hendrig/poc_cypress_specsync.git"
+  },
+  "author": "Hendrig Gonçalves",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hendrig/poc_cypress_specsync/issues"
+  },
+  "homepage": "https://github.com/hendrig/poc_cypress_specsync#readme",
+  "devDependencies": {
+    "@badeball/cypress-cucumber-preprocessor": "^17.2.0",
+    "@cypress/webpack-preprocessor": "^5.17.1",
+    "cypress": "^12.13.0",
+    "cypress-fill-command": "^1.0.2"
+  }
+}
