@@ -7,10 +7,25 @@
       "name": "CypressTests"
     }
   },
+  "synchronization": {
+    "automation": {
+      "enabled": true,
+      "condition": "not @manual"
+    },
+    "links": [
+      {
+        "tagPrefix": "story"
+      },
+      {
+        "tagPrefix": "bug"
+      },
+      {
+        "tagPrefix": "wi"
+      }
+    ]
+  },
   "local": {
-    "featureFileSource": {
-      "type": "folder",
-      "folder": "cypress/e2e/features"
-    }
+    "projectType": "folder",
+    "folder": "cypress/e2e/features"
   }
 }

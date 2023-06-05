@@ -4,7 +4,8 @@
   "description": "A Proof Of Concept about Cypress, Cucumber and SpecSync",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "cypress": "npx cypress open",
+    "test": "npx cypress run",
     "sync": ".\\tools\\SpecSync.AzureDevOps.Console\\tools\\SpecSync4AzureDevOps.exe push",
     "sync:result": ".\\tools\\SpecSync.AzureDevOps.Console\\tools\\SpecSync4AzureDevOps.exe publish-test-results --testResultFileFormat cypressCucumberJson --testResultFile cucumber-report.json"
   },
@@ -22,7 +23,8 @@
     "@badeball/cypress-cucumber-preprocessor": "^17.2.0",
     "@cypress/webpack-preprocessor": "^5.17.1",
     "cypress": "^12.13.0",
-    "cypress-fill-command": "^1.0.2"
+    "cypress-fill-command": "^1.0.2",
+    "cypress-localstorage-commands": "^2.2.3"
   },
   "cypress-cucumber-preprocessor": {
     "nonGlobalStepDefinitions": false,

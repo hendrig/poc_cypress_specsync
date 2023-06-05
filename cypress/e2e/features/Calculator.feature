@@ -5,7 +5,7 @@ Rules for basic addition:
 - The operator has to be specified after both operands have been entered
 
 @tc:44
-@basic
+@story:45
 @manual
 Scenario: Add two numbers
 	Given I have entered 5 into the calculator
