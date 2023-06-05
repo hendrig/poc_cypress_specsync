@@ -1,10 +1,12 @@
-# Running SpecSync with Cypress
+# POC - SpecSync and Cypress
 
-This repo is a basic repository that uses Cypress, Cucumber (for writing Gherkin), and the standalone version of SpecSync.
+This is a Proof of Concept (POC) for the usage of [SpecSync](https://www.specsolutions.eu/specsync/) and [Cypress](https://www.cypress.io/).
 
-## ATDD Life Cycle
+The default project running Cypress was based on [this video](https://youtu.be/bboMTD-c2vc) by "Automation and Stuff by Bhadmus" on YouTube (thanks @bhadmusautomates. Your videos saved a lot of time and helped me to understand the Cypress basic configuration).
 
-In order to run an ATDD like life cycle you can do the following:
+## ATDD Lifecycle
+
+In order to run an ATDD like lifecycle you can do the following:
 
 - Create a story on Azure DevOps. The Acceptance Criteria must have a rough sketch of what is expected by the story, writen in Gherkin
 - Go to the repository with the test cases and add a Gherkin scenario for the story. After adding it, tag the test case with the user story id
