@@ -17,7 +17,7 @@ async function setupNodeEvents(on, config) {
           rules: [
             {
               test: /\.feature$/,
-              exclude: [/node_modules/, /tools/],
+              exclude: [/node_modules/],
               use: [
                 {
                   loader: "@badeball/cypress-cucumber-preprocessor/webpack",
@@ -31,13 +31,12 @@ async function setupNodeEvents(on, config) {
     })
   );
 
-  // Make sure to return the config object as it might have been modified by the plugin.
   return config;
 }
 
 module.exports = defineConfig({
   e2e: {
-    specPattern: "**/*.feature",
+    specPattern: "cypress/**/*.feature",
     supportFile: "cypress/support/e2e.js",
     setupNodeEvents,
   },

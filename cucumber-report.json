@@ -1,0 +1,89 @@
+[
+  {
+    "description": "Rules for basic addition:\n- Only non-negative numbers\n- The operator has to be specified after both operands have been entered",
+    "elements": [
+      {
+        "description": "",
+        "id": "addition;add-two-numbers",
+        "keyword": "Scenario",
+        "line": 10,
+        "name": "Add two numbers",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 11,
+            "name": "I have entered 5 into the calculator",
+            "match": {
+              "location": "not available:0"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 24000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 12,
+            "name": "then I have entered 7 into the calculator",
+            "match": {
+              "location": "not available:0"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 23000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 13,
+            "name": "I choose add",
+            "match": {
+              "location": "not available:0"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 9000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 14,
+            "name": "the result should be 12",
+            "match": {
+              "location": "not available:0"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 11000000
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@tc:44",
+            "line": 7
+          },
+          {
+            "name": "@basic",
+            "line": 8
+          },
+          {
+            "name": "@manual",
+            "line": 9
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "addition",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Addition",
+    "tags": [],
+    "uri": "cypress\\e2e\\features\\Calculator.feature"
+  }
+]

@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "sync": ".\\tools\\SpecSync.AzureDevOps.Console\\tools\\SpecSync4AzureDevOps.exe push"
+    "sync": ".\\tools\\SpecSync.AzureDevOps.Console\\tools\\SpecSync4AzureDevOps.exe push",
+    "sync:result": ".\\tools\\SpecSync.AzureDevOps.Console\\tools\\SpecSync4AzureDevOps.exe publish-test-results --testResultFileFormat cypressCucumberJson --testResultFile cucumber-report.json"
   },
   "repository": {
     "type": "git",
@@ -22,5 +23,18 @@
     "@cypress/webpack-preprocessor": "^5.17.1",
     "cypress": "^12.13.0",
     "cypress-fill-command": "^1.0.2"
+  },
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": false,
+    "step_definitions": "cypress/support/step_definitions/",
+    "cucumberJson": {
+      "generate": true,
+      "outputFolder": "cypress/cucumber-json",
+      "filePrefix": "",
+      "fileSuffix": ".cucumber"
+    },
+    "json": {
+      "enabled": true
+    }
   }
 }
