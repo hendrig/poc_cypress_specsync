@@ -27,6 +27,7 @@
     "cypress-localstorage-commands": "^2.2.3"
   },
   "cypress-cucumber-preprocessor": {
+    "language": "pt",
     "nonGlobalStepDefinitions": false,
     "step_definitions": "cypress/support/step_definitions/",
     "cucumberJson": {

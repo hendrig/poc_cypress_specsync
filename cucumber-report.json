@@ -5,54 +5,54 @@
       {
         "description": "",
         "id": "addition;add-two-numbers",
-        "keyword": "Scenario",
-        "line": 10,
+        "keyword": "Cenário",
+        "line": 11,
         "name": "Add two numbers",
         "steps": [
           {
             "arguments": [],
-            "keyword": "Given ",
-            "line": 11,
-            "name": "I have entered 5 into the calculator",
-            "match": {
-              "location": "not available:0"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 20000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
+            "keyword": "Dado ",
             "line": 12,
-            "name": "then I have entered 7 into the calculator",
+            "name": "que eu adicionei o número 5",
             "match": {
               "location": "not available:0"
             },
             "result": {
               "status": "passed",
-              "duration": 10000000
+              "duration": 23000000
             }
           },
           {
             "arguments": [],
-            "keyword": "When ",
+            "keyword": "E ",
             "line": 13,
-            "name": "I choose add",
+            "name": "que eu adicionei o segundo número 7",
             "match": {
               "location": "not available:0"
             },
             "result": {
               "status": "passed",
-              "duration": 7000000
+              "duration": 25000000
             }
           },
           {
             "arguments": [],
-            "keyword": "Then ",
+            "keyword": "Quando ",
             "line": 14,
-            "name": "the result should be 12",
+            "name": "eu somar",
+            "match": {
+              "location": "not available:0"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 8000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Então ",
+            "line": 15,
+            "name": "o resultado deverá ser 12",
             "match": {
               "location": "not available:0"
             },
@@ -65,23 +65,23 @@
         "tags": [
           {
             "name": "@tc:44",
-            "line": 7
-          },
-          {
-            "name": "@story:45",
             "line": 8
           },
           {
-            "name": "@manual",
+            "name": "@story:45",
             "line": 9
+          },
+          {
+            "name": "@manual",
+            "line": 10
           }
         ],
         "type": "scenario"
       }
     ],
     "id": "addition",
-    "line": 1,
-    "keyword": "Feature",
+    "line": 2,
+    "keyword": "Funcionalidade",
     "name": "Addition",
     "tags": [],
     "uri": "cypress\\e2e\\features\\Calculator.feature"

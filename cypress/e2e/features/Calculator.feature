@@ -1,4 +1,5 @@
-Feature: Addition
+#language: pt
+Funcionalidade: Addition
 
 Rules for basic addition:
 - Only non-negative numbers
@@ -7,8 +8,8 @@ Rules for basic addition:
 @tc:44
 @story:45
 @manual
-Scenario: Add two numbers
-	Given I have entered 5 into the calculator
-	And then I have entered 7 into the calculator
-	When I choose add
-	Then the result should be 12
+Cenário: Add two numbers
+	Dado que eu adicionei o número 5
+	E que eu adicionei o segundo número 7
+	Quando eu somar
+	Então o resultado deverá ser 12

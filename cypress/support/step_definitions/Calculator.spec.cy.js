@@ -4,20 +4,20 @@ import { ordinal } from "../../support/common/parameters";
 let first;
 let second;
 let third;
-Given("I have entered {ordinal} into the calculator", (num) => {
+Given("que eu adicionei o número {ordinal}", (num) => {
   first = num;
   console.log(first);
 });
 
-Given("then I have entered {ordinal} into the calculator", (num) => {
+Given("que eu adicionei o segundo número {ordinal}", (num) => {
   second = num;
   console.log(second);
 });
 
-When("I choose add", () => {
+When("eu somar", () => {
   third = first + second;
 });
 
-Then("the result should be {ordinal}", (num) => {
+Then("o resultado deverá ser {ordinal}", (num) => {
   assert.deepEqual(third, num);
 });
