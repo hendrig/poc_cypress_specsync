@@ -12,6 +12,7 @@ async function setupNodeEvents(on, config) {
       webpackOptions: {
         resolve: {
           extensions: [".ts", ".js"],
+          fallback: {},
         },
         module: {
           rules: [
@@ -36,7 +37,7 @@ async function setupNodeEvents(on, config) {
 
 module.exports = defineConfig({
   e2e: {
-    specPattern: "cypress/**/*.feature",
+    specPattern: "features/**/*.feature",
     supportFile: "cypress/support/e2e.js",
     setupNodeEvents,
   },

@@ -1,89 +1,63 @@
 [
   {
-    "description": "Rules for basic addition:\n- Only non-negative numbers\n- The operator has to be specified after both operands have been entered",
+    "description": "",
     "elements": [
       {
         "description": "",
-        "id": "addition;add-two-numbers",
-        "keyword": "Cenário",
+        "id": "visitando-um-site;visitando-um-site-qualquer",
+        "keyword": "Esquema do Cenário",
         "line": 11,
-        "name": "Add two numbers",
+        "name": "Visitando um site qualquer",
         "steps": [
           {
             "arguments": [],
             "keyword": "Dado ",
-            "line": 12,
-            "name": "que eu adicionei o número 5",
+            "line": 5,
+            "name": "que eu digitei o endereço do site www.google.com",
             "match": {
               "location": "not available:0"
             },
             "result": {
               "status": "passed",
-              "duration": 23000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "E ",
-            "line": 13,
-            "name": "que eu adicionei o segundo número 7",
-            "match": {
-              "location": "not available:0"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 25000000
+              "duration": 20000000
             }
           },
           {
             "arguments": [],
             "keyword": "Quando ",
-            "line": 14,
-            "name": "eu somar",
+            "line": 6,
+            "name": "eu iniciar a navegação",
             "match": {
               "location": "not available:0"
             },
             "result": {
               "status": "passed",
-              "duration": 8000000
+              "duration": 1686000000
             }
           },
           {
             "arguments": [],
             "keyword": "Então ",
-            "line": 15,
-            "name": "o resultado deverá ser 12",
+            "line": 7,
+            "name": "eu devo ter conseguido acessar o site",
             "match": {
               "location": "not available:0"
             },
             "result": {
               "status": "passed",
-              "duration": 15000000
+              "duration": 18000000
             }
           }
         ],
-        "tags": [
-          {
-            "name": "@tc:44",
-            "line": 8
-          },
-          {
-            "name": "@story:45",
-            "line": 9
-          },
-          {
-            "name": "@manual",
-            "line": 10
-          }
-        ],
+        "tags": [],
         "type": "scenario"
       }
     ],
-    "id": "addition",
+    "id": "visitando-um-site",
     "line": 2,
     "keyword": "Funcionalidade",
-    "name": "Addition",
+    "name": "Visitando um site",
     "tags": [],
-    "uri": "cypress\\e2e\\features\\Calculator.feature"
+    "uri": "features\\Visiting.feature"
   }
 ]

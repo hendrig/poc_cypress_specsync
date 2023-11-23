@@ -20,16 +20,14 @@
   },
   "homepage": "https://github.com/hendrig/poc_cypress_specsync#readme",
   "devDependencies": {
-    "@badeball/cypress-cucumber-preprocessor": "^17.2.0",
-    "@cypress/webpack-preprocessor": "^5.17.1",
-    "cypress": "^12.13.0",
-    "cypress-fill-command": "^1.0.2",
-    "cypress-localstorage-commands": "^2.2.3"
+    "@badeball/cypress-cucumber-preprocessor": "^19.1.1",
+    "@cypress/webpack-preprocessor": "^6.0.0",
+    "cypress": "^13.6.0"
   },
   "cypress-cucumber-preprocessor": {
     "language": "pt",
     "nonGlobalStepDefinitions": false,
-    "step_definitions": "cypress/support/step_definitions/",
+    "step_definitions": "cypress/supprot/step_definitions/",
     "cucumberJson": {
       "generate": true,
       "outputFolder": "cypress/cucumber-json",

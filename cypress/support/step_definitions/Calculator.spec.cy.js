@@ -1,5 +1,5 @@
 import { Given, When, Then } from "@badeball/cypress-cucumber-preprocessor";
-import { ordinal } from "../../support/common/parameters";
+import { ordinal } from "../common/parameters";
 
 let first;
 let second;
